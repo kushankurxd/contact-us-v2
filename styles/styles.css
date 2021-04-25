@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-image: url("../images/contact-us-cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.main-container {
+  width: 70vw;
+  height: 80vh;
+
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.left-main-container {
+  width: 40%;
+  background-image: url("../images/anlytics.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+}
+
+.container__overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@media (max-width: 1399px) {
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 999px) {
+  .left-main-container {
+    display: none;
+  }
+}
